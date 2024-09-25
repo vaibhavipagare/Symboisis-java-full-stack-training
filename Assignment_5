@@ -1,0 +1,19 @@
+import java.util.Scanner;   
+public class Employee {
+	int empCode;String empName,address;
+	public Employee(int empCode, String empname,String address) {
+		this.empCode=empCode;this.empName=empname;
+		this.address=address;
+	}
+	public void show() {
+		System.out.println("Employee Code"+empCode);
+		System.out.println("Employee Name"+empName);
+		System.out.println("Employee Address"+address);
+	}
+public static void main(String[] args) {
+		Employee[] empList =new Employee[2];
+		empList[0]=new Employee(12,"Ram","India");
+		empList[1]=new Employee(5,"Sita","Uk");
+		empList[0].show();empList[1].show();
+	}
+}
