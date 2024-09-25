@@ -1,0 +1,20 @@
+//write a program to accept a character and find out  whether it is character digit or special symbol
+
+import java.util.Scanner;
+
+public class CharecterAccepts {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a character: ");
+        char inputChar = scanner.next().charAt(0);
+        scanner.close();
+
+        if ((inputChar >= 65 && inputChar <= 90) || (inputChar >= 97 && inputChar <= 122)) {
+            System.out.println("Charecter");
+        } else if (inputChar >= 48 && inputChar <= 57) {
+            System.out.println("Digit");
+        } else {
+            System.out.println("Special Symbol");
+        }
+    }
+}
