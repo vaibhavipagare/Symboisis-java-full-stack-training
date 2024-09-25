@@ -1,1 +1,23 @@
+//program for calculating the simple interest
+
+import java.util.Scanner;
+public class SimpleIntrest {
+	public static void main(String[] args) {
+		int p,r,n;
+		float Si;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the value of principle");
+		p=sc.nextInt();
+		
+		System.out.println("enter the value of rate");
+		r=sc.nextInt();
+		
+		
+		System.out.println("enter the value of number of year");
+		n=sc.nextInt();
+		
+		Si=p*n/100;
+		System.out.println("the simple intrest is="+Si);
+	}
+}
 
